@@ -37,7 +37,7 @@ The accompanying Excel workbook ('SOX_404_UAR_Reconciliation_Template_2026.xlsx'
 ### 1. Cross-Sheet Data Mining ('XLOOKUP')
 To map target system accounts dynamically against the HR master roster without relying on legacy 'VLOOKUP':
 
-'''excel
+Excel
 =XLOOKUP(B2, HR_Table[Emp_ID], HR_Table[Full_Name], "UNKNOWN / NO HR RECORD")
 
 ### 2. Automated Compliance Risk-Flagging Logic
@@ -45,7 +45,9 @@ A nested conditional formula evaluates user status, security role, and HR mappin
 
 Excel
 
-=IF(E2="Terminated", "CRITICAL: Terminated User Active", IF(E2="UNMAPPED", "HIGH: Orphan/Service Account", IF(AND(C2="ERP_Admin", E2="Active"), "REVIEW: Privileged Access", "PASS: Valid Access")))
+=IF(E2="Terminated", "CRITICAL: Terminated User Active", 
+  IF(E2="UNMAPPED", "HIGH: Orphan/Service Account", 
+   IF(AND(C2="ERP_Admin", E2="Active"), "REVIEW: Privileged Access", "PASS: Valid Access")))
 
 ### 3. Risk Classification Output Matrix
 
