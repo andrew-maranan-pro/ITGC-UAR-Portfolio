@@ -38,6 +38,7 @@ The accompanying Excel workbook ('SOX_404_UAR_Reconciliation_Template_2026.xlsx'
 To map target system accounts dynamically against the HR master roster without relying on legacy 'VLOOKUP':
 
 Excel
+
 =XLOOKUP(B2, HR_Table[Emp_ID], HR_Table[Full_Name], "UNKNOWN / NO HR RECORD")
 
 ### 2. Automated Compliance Risk-Flagging Logic
