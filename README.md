@@ -47,7 +47,8 @@ Excel
 
 =IF(E2="Terminated", "CRITICAL: Terminated User Active",<br> 
 &emsp;IF(E2="UNMAPPED", "HIGH: Orphan/Service Account",<br> 
-&emsp;&emsp;IF(AND(C2="ERP_Admin", E2="Active"), "REVIEW: Privileged Access", "PASS: Valid Access")))
+&emsp;&emsp;IF(AND(C2="ERP_Admin", E2="Active"), "REVIEW: Privileged Access",<br>
+&emsp;&emsp;"PASS: Valid Access")))
 
 ### 3. Risk Classification Output Matrix
 
