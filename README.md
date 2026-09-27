@@ -6,8 +6,7 @@ This repository contains an end-to-end **User Access Review (UAR)** audit reconc
 **SOX 404 IT General Controls (ITGC)** and **Identity & Access Management (IAM)** compliance requirements.
 
 The primary control objective is to verify that system user permissions across production databases (ERP/Active Directory)
-align with human resources master records, enforcing the **Principle of Least Privilege** and ensuring prompt credential
-revocation upon employee termination.
+align with HR master records, enforce the **Principles of Least Privilege and Segregation of Duties (SoD)**, and ensure prompt credential revocation upon employee termination.
 
 ---
 
