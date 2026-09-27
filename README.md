@@ -20,11 +20,11 @@ align with HR master records, enforce the **Principles of Least Privilege and Se
 
 ## Workbook Architecture & Structure
 
-The accompanying Excel workbook ('SOX_404_UAR_Reconciliation_Template_2026.xlsx') is structured across four functional worksheets:
+The accompanying Excel workbook ('SOX_404_UAR_Reconciliation_Project_2026.xlsx') is structured across four functional worksheets:
 
 | Worksheet | Role | Description |
 | :--- | :--- | :--- |
-| '1. HR_Master_Roster' | Source of Truth | Master employee directory containing employee status ('Active'/'Terminated') and official separation dates. |
+| 1. 'HR_Master_Roster | Source of Truth | Master employee directory containing employee status ('Active'/'Terminated') and official separation dates. |
 | '2. System_Access_Dump' | Target System Extract | Production system entitlement export containing User IDs, assigned security roles, and last login timestamps. |
 | '3. UAR Reconciliation' | Audit Working Paper | Core testing sheet utilizing dynamic cross-sheet lookup formulas, multi-condition risk logic, and remediation tagging. |
 | '4. Audit_Summary_Signoff' | Executive Deliverable | Aggregated dashboard and formal audit memorandum summarizing findings, testing metrics, and control sign-off. |
