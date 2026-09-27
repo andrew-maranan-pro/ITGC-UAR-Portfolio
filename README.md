@@ -45,9 +45,9 @@ A nested conditional formula evaluates user status, security role, and HR mappin
 
 Excel
 
-=IF(E2="Terminated", "CRITICAL: Terminated User Active", 
-  IF(E2="UNMAPPED", "HIGH: Orphan/Service Account", 
-   IF(AND(C2="ERP_Admin", E2="Active"), "REVIEW: Privileged Access", "PASS: Valid Access")))
+=IF(E2="Terminated", "CRITICAL: Terminated User Active",<br> 
+&nbsp;&nbsp;IF(E2="UNMAPPED", "HIGH: Orphan/Service Account",<br> 
+&nbsp;&nbsp;&nbsp;IF(AND(C2="ERP_Admin", E2="Active"), "REVIEW: Privileged Access", "PASS: Valid Access")))
 
 ### 3. Risk Classification Output Matrix
 
